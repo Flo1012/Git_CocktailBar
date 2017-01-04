@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<entity-mappings
+	xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.eclipse.org/eclipselink/xsds/persistence/orm http://www.eclipse.org/eclipselink/xsds/eclipselink_orm_2_1.xsd"
+	version="2.1">
+	
+	<!-- RELATION AVEC LA CLASSE INGREDIENT ET LA TABLE DE LA BDD INGREDIENT -->
+	<entity class="fr.formation.ENTITY.Ingredient">
+		<table name="ingredient"/>
+		<attributes>
+			<id name="id">
+			<column name="id"/>
+				<generated-value strategy="IDENTITY"/>
+			</id>
+			<basic name="etat">
+				<column name="etat"/>
+			</basic>
+			<basic name="nom">
+				<column name="nom"/>
+			</basic>
+		</attributes>
+	</entity>
+	
+	<!-- RELATION AVEC LA CLASSE COCKTAIL ET LA TABLE DE LA BDD COCKTAIL -->
+	
+
+</entity-mappings>
